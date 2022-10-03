@@ -4,6 +4,7 @@ import {
   FaBriefcase,
   FaUserEdit,
   FaClipboardCheck,
+  FaChartPie,
 } from "react-icons/fa";
 
 const Sidebar = () => {
@@ -20,6 +21,10 @@ const Sidebar = () => {
       <div className="p-2 flex flex-col justify-center items-center cursor-pointer rounded-xl">
         <FaClipboardCheck className="text-3xl" />
         <p className="font-normal">Applied</p>
+      </div>
+      <div className="p-2 flex flex-col justify-center items-center cursor-pointer rounded-xl">
+        <FaChartPie className="text-3xl" />
+        <p className="font-normal">Stats</p>
       </div>
       <div className="p-2 flex flex-col justify-center items-center cursor-pointer rounded-xl">
         <FaUserEdit className="text-3xl" />
