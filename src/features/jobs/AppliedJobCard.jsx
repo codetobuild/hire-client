@@ -3,7 +3,7 @@ import Button from "../../components/Button.component";
 
 const AppliedJobCard = () => {
   return (
-    <div className="block xs:px-2 xs:py-4 md:px-4 rounded-lg drop-shadow-md bg-white max-w-full mb-4">
+    <div className="block xs:px-2 xs:py-4 md:px-4 rounded-lg drop-shadow-sm hover:drop-shadow-lg ease-in-out duration-300 bg-white border-b-2 border-slate-200 max-w-full mb-4">
       <div className="flex justify-between items-center flex-wrap">
         <div className="grow mb-3">
           <h5 className="text-gray-900 text-md font-medium">Company Name</h5>
