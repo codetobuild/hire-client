@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../../components/Container.component";
+import { Link } from "react-router-dom";
 
 const TableRow = () => {
   return (
@@ -14,11 +15,11 @@ const TableRow = () => {
       <td className="py-4 px-6">Google</td>
       <td className="py-4 px-6">Dream</td>
       <td className="py-4 px-6 text-right">
-        <a
-          href="#"
+        <Link
+          to="/students/:studentId"
           className="text-md font-medium text-blue-600 dark:text-blue-500 hover:underline">
           View or Edit
-        </a>
+        </Link>
       </td>
     </tr>
   );

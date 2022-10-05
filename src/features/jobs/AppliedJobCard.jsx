@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../../components/Button.component";
+import { Link } from "react-router-dom";
 
 const AppliedJobCard = () => {
   return (
@@ -22,8 +23,12 @@ const AppliedJobCard = () => {
         </div>
 
         <div className="flex xs:flex-row sm:flex-col md:flex-row gap-4 flex-wrap justify-between items-center">
-          <Button />
-          <Button />
+          {/* <Link to="/jobs/jobId">
+            <Button />
+          </Link> */}
+          <Link to="/jobs/JobId">
+            <Button label="View Job" />
+          </Link>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../../components/Container.component";
 import { FaFilePdf } from "react-icons/fa";
 import Button from "../../components/Button.component";
+import { Link } from "react-router-dom";
 
 const JobsDetail = () => {
   return (
@@ -85,7 +86,9 @@ const JobsDetail = () => {
             </div>
           </div>
           <div>
-            <Button />
+            <Link to="/jobs/apply/:jobId">
+              <Button label="Apply" />
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-import { FaBars, FaUserCircle, FaAngleDoubleRight } from "react-icons/fa";
+import { FaBars, FaUserCircle } from "react-icons/fa";
+import HamburgerMenu from "./HamburgerMenu.component";
 
 const Navbar = () => {
   const [hamberMenu, setHamberMenu] = useState(false);
@@ -24,27 +25,7 @@ const Navbar = () => {
         </div>
       </div>
       {hamberMenu ? (
-        <div className="xs:block md:hidden w-3/4 h-full fixed top-0 right-0 bg-blue-200 drop-shadow-lg z-50">
-          <div className="mb-4">
-            <FaAngleDoubleRight
-              className="text-4xl cursor-pointer"
-              onClick={() => {
-                setHamberMenu((prev) => !prev);
-              }}
-            />
-          </div>
-          <div className="flex flex-col gap-x-2 justify-center items-center mb-4">
-            <FaUserCircle className="text-4xl" />
-            <p className="text-lg">Firstname Lastname</p>
-          </div>
-          <div className="h-full overflow-x-auto">
-            <ul>
-              <li className="p-2 text-center ">Home</li>
-              <li className="p-2 text-center ">Home</li>
-              <li className="p-2 text-center ">Home</li>
-            </ul>
-          </div>
-        </div>
+        <HamburgerMenu hamberMenu={hamberMenu} setHamberMenu={setHamberMenu} />
       ) : null}
     </div>
   );

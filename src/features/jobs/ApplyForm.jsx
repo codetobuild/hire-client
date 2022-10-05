@@ -23,7 +23,7 @@ const InputBlock = () => {
 const ApplyForm = () => {
   return (
     <Container>
-      <div className="p-4 bg-green-200">
+      <div className="p-4">
         <div className="max-w-lg mx-auto bg-white rounded-lg xs:py-4 xs:px-4 md:py-8 md:px-8 shadow-xl">
           <div>
             <h2 className="text-lg font-medium text-center text-gray-600 mb-4">
@@ -66,7 +66,12 @@ const ApplyForm = () => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <Button />
+            <Button
+              label="submit"
+              onClick={() => {
+                console.log("apply form submit");
+              }}
+            />
           </div>
         </div>
       </div>

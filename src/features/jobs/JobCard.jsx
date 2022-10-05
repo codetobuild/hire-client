@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../../components/Button.component";
+import { Link } from "react-router-dom";
 
 const JobCard = () => {
   return (
@@ -33,8 +34,12 @@ const JobCard = () => {
       </p>
 
       <div className="flex gap-4">
-        <Button />
-        <Button />
+        <Link to="/jobs/jobId">
+          <Button label="View" />
+        </Link>
+        <Link to="/jobs/apply/jobId">
+          <Button label="Apply" />
+        </Link>
       </div>
     </div>
   );
