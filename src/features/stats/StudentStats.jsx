@@ -27,7 +27,7 @@ const TableRow = () => {
 const StudentStats = () => {
   return (
     <Container>
-      <div className="p-4 bg-gray-100">
+      <div className="p-4 ">
         <div className="overflow-x-auto relative shadow-md rounded-lg">
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 bg-white">
             <caption className="p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
