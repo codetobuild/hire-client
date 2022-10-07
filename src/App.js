@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home.page";
 import AppliedJobReviewPage from "./pages/AppliedJobReview.page";
 import StudentDetailsPage from "./pages/StudentDetails.page";
+import ProfileOverviewPage from "./pages/ProfileOverview.page";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
         <Route path="/jobs/applied/:jobId" element={<AppliedJobReviewPage />} />
         <Route path="/jobs/publish" element={<PublishJobPage />} />
         <Route path="/jobs/:jobId" element={<JobsDetailPage />} />
-        <Route path="/profile" element={<ProfileFormPage />} />
+        <Route path="/profile" element={<ProfileOverviewPage />} />
+        <Route path="/profile/update" element={<ProfileFormPage />} />
         <Route path="/students/stats" element={<StudentStatsPage />} />
         <Route path="/students/:studentId" element={<StudentDetailsPage />} />
         <Route path="/login" element={<LoginPage />} />

@@ -8,7 +8,7 @@ const JobsDetail = () => {
   return (
     <Container>
       <div className="p-4">
-        <div className="">
+        <div className="mb-4">
           <h1 className="text-2xl font-medium leading-tight">
             Job Description
           </h1>

@@ -1,21 +1,14 @@
 import React from "react";
 import Button from "../../components/Button.component";
 import Container from "../../components/Container.component";
+import Input from "../../components/Input.component";
+import InputLabel from "../../components/InputLabel.component";
 
 const InputBlock = () => {
   return (
     <div className="mb-4">
-      <label
-        htmlFor="company-website"
-        className="block text-md font-medium text-gray-700">
-        Email
-      </label>
-      <input
-        type="text"
-        className="form-control block w-full px-4 py-2 text-md font-normal text-gray-700 bg-white bg-clip-padding border-2 border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-        id="email"
-        placeholder="example@gmail.com"
-      />
+      <InputLabel />
+      <Input />
     </div>
   );
 };
