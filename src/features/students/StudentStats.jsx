@@ -18,7 +18,7 @@ const Table = (props) => {
   );
 };
 
-const JobsApplicants = () => {
+const StudentStats = () => {
   return (
     <Container>
       <div className="p-4 ">
@@ -30,4 +30,4 @@ const JobsApplicants = () => {
   );
 };
 
-export default JobsApplicants;
+export default StudentStats;
