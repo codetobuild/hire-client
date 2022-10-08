@@ -9,9 +9,9 @@ import {
 import { useLocation, NavLink } from "react-router-dom";
 const Sidebar = () => {
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
   const currentActiveSideNav = location.pathname.split("/");
-  console.log(currentActiveSideNav);
+  // console.log(currentActiveSideNav);
 
   return (
     <div className="xs:hidden md:block w-20 mt-12 ml-2">
