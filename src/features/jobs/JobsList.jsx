@@ -1,6 +1,8 @@
 import React from "react";
+import Button from "../../components/Button.component";
 import Container from "../../components/Container.component";
 import JobCard from "./JobCard";
+import { Link } from "react-router-dom";
 
 const JobsList = () => {
   return (
@@ -11,7 +13,12 @@ const JobsList = () => {
             Search for Jobs
           </h1>
         </div>
-        <div className="flex xs:flex-col md:flex-row xs:gap-0 md:gap-5 justify-start my-8">
+        <div className="flex flex-col gap-4 my-8">
+          <div>
+            <Link to="/jobs/publish">
+              <Button label="Publish new job" />
+            </Link>
+          </div>
           <div className="text-lg flex gap-2">
             <p>Sort by</p>
             <select className="font-medium">
@@ -20,7 +27,7 @@ const JobsList = () => {
               <option>Most Recent</option>
             </select>
           </div>
-          <div className="text-lg">Results (120)</div>
+          {/* <div className="text-lg">Results (120)</div> */}
         </div>
         <div className="">
           <JobCard />

@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../../components/Container.component";
 import { Link } from "react-router-dom";
-import { studentsTableData } from "./formData";
+import { tableData } from "./formData";
 import TableRows from "../../components/TableRows.component";
 import TableColumns from "../../components/TableColumns.component";
 
@@ -23,7 +23,7 @@ const JobsApplicants = () => {
     <Container>
       <div className="p-4 ">
         <div className="overflow-x-auto relative shadow-md rounded-lg">
-          <Table tableData={studentsTableData} />
+          <Table tableData={tableData} />
         </div>
       </div>
     </Container>

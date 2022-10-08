@@ -212,3 +212,102 @@ export const profileForm = [
     },
   },
 ];
+
+export const tableData = {
+  key: "tnp",
+  caption: {
+    primary:
+      "List of Applicants who applied for the Software Engineer role at Amazon",
+  },
+  cols: {
+    options: {},
+    data: [
+      { key: "studentName", label: "Student name" },
+      { key: "enrollment", label: "Enrollment" },
+      { key: "branch", label: "Branch" },
+      { key: "edit", label: "" },
+    ],
+  },
+  rows: {
+    options: {},
+    data: [
+      [
+        { key: "studentName", label: "Firstname Lastname" },
+        { key: "enrollment", label: "19UCS143" },
+        { key: "branch", label: "CSE" },
+        {
+          key: "edit",
+          label: "view or edit",
+          type: "link",
+          url: "/students/:id",
+        },
+      ],
+      [
+        { key: "studentName", label: "Firstname Lastname" },
+        { key: "enrollment", label: "19UCS143" },
+        { key: "branch", label: "CSE" },
+        {
+          key: "edit",
+          label: "view or edit",
+          type: "link",
+          url: "/students/:id",
+        },
+      ],
+      [
+        { key: "studentName", label: "Firstname Lastname" },
+        { key: "enrollment", label: "19UCS143" },
+        { key: "branch", label: "CSE" },
+        {
+          key: "edit",
+          label: "view or edit",
+          type: "link",
+          url: "/students/:id",
+        },
+      ],
+      [
+        { key: "studentName", label: "Firstname Lastname" },
+        { key: "enrollment", label: "19UCS143" },
+        { key: "branch", label: "CSE" },
+        {
+          key: "edit",
+          label: "view or edit",
+          type: "link",
+          url: "/students/:id",
+        },
+      ],
+      [
+        { key: "studentName", label: "Firstname Lastname" },
+        { key: "enrollment", label: "19UCS143" },
+        { key: "branch", label: "CSE" },
+        {
+          key: "edit",
+          label: "view or edit",
+          type: "link",
+          url: "/students/:id",
+        },
+      ],
+      [
+        { key: "studentName", label: "Firstname Lastname" },
+        { key: "enrollment", label: "19UCS143" },
+        { key: "branch", label: "CSE" },
+        {
+          key: "edit",
+          label: "view or edit",
+          type: "link",
+          url: "/students/:id",
+        },
+      ],
+      [
+        { key: "studentName", label: "Firstname Lastname" },
+        { key: "enrollment", label: "19UCS143" },
+        { key: "branch", label: "CSE" },
+        {
+          key: "edit",
+          label: "view or edit",
+          type: "link",
+          url: "/students/:id",
+        },
+      ],
+    ],
+  },
+};

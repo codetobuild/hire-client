@@ -12,6 +12,7 @@ import HomePage from "./pages/Home.page";
 import AppliedJobReviewPage from "./pages/AppliedJobReview.page";
 import StudentDetailsPage from "./pages/StudentDetails.page";
 import ProfileOverviewPage from "./pages/ProfileOverview.page";
+import JobsApplicantsPage from "./pages/JobsApplicants.page";
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
         <Route path="/jobs/applied/:jobId" element={<AppliedJobReviewPage />} />
         <Route path="/jobs/publish" element={<PublishJobPage />} />
         <Route path="/jobs/:jobId" element={<JobsDetailPage />} />
+        <Route
+          path="/jobs/:jobId/applicants"
+          element={<JobsApplicantsPage />}
+        />
         <Route path="/profile" element={<ProfileOverviewPage />} />
         <Route path="/profile/update" element={<ProfileFormPage />} />
         <Route path="/students/stats" element={<StudentStatsPage />} />
