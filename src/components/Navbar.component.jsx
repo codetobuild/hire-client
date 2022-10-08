@@ -11,8 +11,8 @@ const Navbar = () => {
       <div className="">
         <div className="text-black text-3xl font-bold">Hire</div>
       </div>
-      <div className="">
-        <div className="w-12 h-12 md:block xs:hidden">
+      <div className="flex justify-between items-center">
+        <div className="md:flex md:justify-center md:items-center w-12 h-12 xs:hidden">
           <FaUserCircle className="text-4xl" />
         </div>
         <div className="xs:block md:hidden">
