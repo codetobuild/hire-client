@@ -16,13 +16,7 @@ const Navbar = () => {
           <FaUserCircle className="text-4xl" />
         </div>
         <div className="xs:block md:hidden">
-
-
-
-\]\
-
-
-n           <FaBars
+          <FaBars
             className="text-4xl cursor-pointer"
             onClick={() => {
               setHamberMenu((prev) => !prev);

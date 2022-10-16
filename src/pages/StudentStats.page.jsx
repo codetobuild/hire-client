@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/Container.component";
 import Navbar from "../components/Navbar.component";
 import Sidebar from "../components/Siderbar.component";
-import StudentStats from "../features/students/StudentStats";
+import StudentStats from "../features/stats/StudentStats";
 
 const ProfileFormPage = () => {
   return (

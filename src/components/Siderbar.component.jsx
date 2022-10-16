@@ -45,7 +45,7 @@ const Sidebar = () => {
           <p className="font-normal">Applied</p>
         </div>
       </NavLink>
-      <NavLink to="/students/stats">
+      <NavLink to="/stats">
         <div
           className={`p-2 flex flex-col justify-center items-center cursor-pointer rounded-xl ${
             currentActiveSideNav[1] == "students" &&

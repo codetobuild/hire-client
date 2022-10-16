@@ -13,6 +13,7 @@ import AppliedJobReviewPage from "./pages/AppliedJobReview.page";
 import StudentDetailsPage from "./pages/StudentDetails.page";
 import ProfileOverviewPage from "./pages/ProfileOverview.page";
 import JobsApplicantsPage from "./pages/JobsApplicants.page";
+import StatsPage from "./pages/Stats.page";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
         />
         <Route path="/profile" element={<ProfileOverviewPage />} />
         <Route path="/profile/update" element={<ProfileFormPage />} />
-        <Route path="/students/stats" element={<StudentStatsPage />} />
+        <Route path="/stats/students" element={<StudentStatsPage />} />
+        <Route path="/stats" element={<StatsPage />} />
         <Route path="/students/:studentId" element={<StudentDetailsPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<PageNotFound />} />

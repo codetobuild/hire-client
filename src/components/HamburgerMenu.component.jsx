@@ -30,6 +30,9 @@ const HamburgerMenu = (props) => {
             <NavLink to="/jobs/applied">Applied</NavLink>
           </li>
           <li className="p-2 text-center text-md font-medium">
+            <NavLink to="/stats">Stats</NavLink>
+          </li>
+          <li className="p-2 text-center text-md font-medium">
             <NavLink to="/profile">Profile</NavLink>
           </li>
         </ul>
