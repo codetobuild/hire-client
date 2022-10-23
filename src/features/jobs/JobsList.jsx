@@ -13,15 +13,15 @@ const JobsList = () => {
             Search for Jobs
           </h1>
         </div>
-        <div className="flex flex-col gap-4 my-8">
+        <div className="flex flex-col items-start gap-4 my-8">
           <div>
             <Link to="/jobs/publish">
               <Button label="Publish new job" />
             </Link>
           </div>
-          <div className="text-lg flex gap-2">
+          <div className="text-lg flex gap-2 justify-center items-center">
             <p>Sort by</p>
-            <select className="font-medium">
+            <select className="outline-none border-2 border-slate-300 rounded-md px-2 py-1">
               <option>Most Recent</option>
               <option>Most Recent</option>
               <option>Most Recent</option>

@@ -1,12 +1,16 @@
 import React from "react";
+import Container from "../components/Container.component";
+import Navbar from "../components/Navbar.component";
+import JobsList from "../features/jobs/JobsList";
+import Sidebar from "../components/Siderbar.component";
 import LoginForm from "../features/login/LoginForm";
 
-const LoginPage = () => {
+const JobsListPage = () => {
   return (
-    <div>
+    <Container>
       <LoginForm />
-    </div>
+    </Container>
   );
 };
 
-export default LoginPage;
+export default JobsListPage;

@@ -6,6 +6,7 @@ import {
   FaClipboardCheck,
   FaChartPie,
 } from "react-icons/fa";
+
 import { useLocation, NavLink } from "react-router-dom";
 const Sidebar = () => {
   const location = useLocation();
@@ -48,10 +49,7 @@ const Sidebar = () => {
       <NavLink to="/stats">
         <div
           className={`p-2 flex flex-col justify-center items-center cursor-pointer rounded-xl ${
-            currentActiveSideNav[1] == "students" &&
-            currentActiveSideNav[2] == "stats"
-              ? "bg-blue-200"
-              : ""
+            currentActiveSideNav[1] == "stats" ? "bg-blue-200" : ""
           }`}>
           <FaChartPie className="text-3xl" />
           <p className="font-normal">Stats</p>
